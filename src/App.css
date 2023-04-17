@@ -1,0 +1,169 @@
+:root {
+  --green-title: #78b724;
+  --green-bttn: #88e310;
+  --bg-app: #05292e;
+  --bg-cards: #062226;
+  --info1: rgb(255, 248, 248);
+  --info2: #485459;
+}
+
+body {
+  background-color: var(--bg-app);
+}
+
+.app_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 2000px;
+  margin: auto;
+}
+
+.app__img {
+  width: 100%;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+form input {
+  height: 2.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: none;
+  width: 13rem;
+  font-family: inherit;
+}
+
+form button {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border: none;
+  height: 2.5rem;
+  width: 5rem;
+  background-color: var(--green-bttn);
+  font-family: inherit;
+  font-weight: bolder;
+}
+
+.error__msg {
+  color: var(--info1);
+  font-weight: bolder;
+}
+
+.local__info {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--bg-cards);
+  width: 350px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.local__name {
+  color: var(--green-title);
+}
+
+.local__list {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--info2);
+  text-align: center;
+}
+
+span {
+  color: var(--info1);
+  font-weight: bold;
+}
+
+.resident__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.residents__card {
+  max-width: 320px;
+  max-height: 68`0px;
+  gap: 1rem;
+  background-color: var(--bg-cards);
+  border-radius: 1rem;
+  position: relative;
+  transition: transform 200;
+}
+
+.residents__card:hover {
+  transform: scale(1.05);
+}
+
+.resident__img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.resident__status {
+  background-color: var(--bg-cards);
+  width: 100px;
+  height: 22px;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  top: 6%;
+}
+
+.circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #aaa;
+}
+
+.Alive {
+  background-color: #88e310;
+}
+
+.Dead {
+  background-color: red;
+}
+
+.resident__description {
+  padding: 1rem;
+}
+
+.resident__name {
+  text-align: center;
+  color: var(--info1);
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+hr {
+  border-color: var(--info2);
+  margin-bottom: 1rem;
+}
+
+.resident__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
