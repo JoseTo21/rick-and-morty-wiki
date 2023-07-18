@@ -99,7 +99,7 @@ span {
 
 .residents__card {
   max-width: 320px;
-  max-height: 68`0px;
+  max-height: 680px;
   gap: 1rem;
   background-color: var(--bg-cards);
   border-radius: 1rem;

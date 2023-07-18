@@ -23,7 +23,7 @@ function App() {
       <section>
         <img
           className="app__img"
-          src="public\rick-morty-collection-banner_2592x.jpg"
+          src="rick-morty-collection-banner_2592x.jpg"
         />
       </section>
       <main className="app_body">
